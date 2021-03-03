@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    margin: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.appControl {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #797f8c4d;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.appControlCont {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    background-color: #626973;
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.boxdisplay {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9c4b84d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#color {
+    width: 10rem;
+    margin: 1rem;
+}
+
+.slider>input {
+    width: 3rem;
+    height: 2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    text-align: center;
+}
+
+.box-cont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    height: 50%;
+    width: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box>p {
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    h3 {
+        font-size: 1rem;
+        top: 1rem;
+    }
+    .app {
+        flex-direction: column;
+    }
+    .appControlCont {
+        height: 70%;
+    }
+    .slider {
+        margin: 0.2rem;
+    }
+    #color {
+        width: 8rem;
+    }
+    .box>p {
+        font-size: 13px;
+        margin: 0.3rem;
+    }
 }
